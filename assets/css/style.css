@@ -17,19 +17,19 @@
 }
 
 .navbar-light .navbar-brand:hover {
-  color: var(--gray);
+  color: var(--white);
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: var(--white);
+  color: var(--gray);
   font-size: 1.3em;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-  color: var(--gray);
+  color: var(--white);
 }
 
 .navbar-light .navbar-brand {
-  color: var(--white);
+  color: var(--gray);
 }
 
 /* .navbar-light .navbar-nav .nav-link.active {
@@ -40,15 +40,26 @@
   display: flex;
   justify-content: space-evenly;
   background: var(--nav);
-  color: var(--white);
+  color: var(--gray);
   position: fixed;
   width: 100%;
   z-index: 3;
 }
 
 .nav-link {
-  color: var(--white);
+  color: var(--gray);
   margin-bottom: 20px;
+}
+
+.navbar-light .navbar-toggler {
+  color: transparents;
+  border: none;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
 }
 
 .subtitle-image {
@@ -209,22 +220,19 @@ textarea {
   letter-spacing: 0.1em;
 }
 
-#submit {
+.btn {
   margin: 10px;
-  width: 5em;
-  height: 2em;
   letter-spacing: 0.1em;
   color: var(--white);
   background-color: #fcaaa8;
-  border-radius: 2px;
+  border-radius: 5px;
   border: 1px solid #a4dbff;
-  margin-top: 117px;
 }
 
-#submit:hover {
+.btn:hover {
   color: var(--white);
   background-color: #a4dbff;
-  box-shadow: 0 0 3px 2px #a4dbff;
+  /* box-shadow: 0 0 5px #a4dbff; */
 }
 
 .footer h4 {
@@ -236,16 +244,6 @@ textarea {
   padding: 10px;
   background: var(--nav);
 }
-
-/* @media screen and (max-width: 992px) {
-  main,
-  nav {
-    display: flex,
-  }
-  .aside-text {
-    display: flex;
-  }
-} */
 
 @media screen and (max-width: 768px) {
   .aside-text {
