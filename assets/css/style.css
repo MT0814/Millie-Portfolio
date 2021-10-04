@@ -1,6 +1,7 @@
 :root {
   --white: rgb(255, 255, 255);
   --gray: rgb(78, 78, 78);
+  --main: #030303;
 }
 
 * {
@@ -43,15 +44,14 @@ main {
   font-size: 1.8em;
 }
 
-.navbar-nav .nav-link {
-  color: rgb(52, 52, 52);
+.nav-link {
+  color: rgb(129, 129, 129);
   font-size: 1.2em;
   margin-right: 1.5em;
   margin-bottom: 20px;
 }
-.navbar-nav .nav-link:hover {
-  color: var(--gray);
-  /* text-shadow: 0 0 3px #ffffff; */
+.nav-link:hover {
+  color: var(--main);
 }
 
 /* .navbar-light .navbar-nav .nav-link.active {
@@ -69,7 +69,7 @@ main {
   /* margin-bottom: 25px; */
 }
 
-.table {
+/* .table {
   margin-top: 100px;
 }
 
@@ -83,7 +83,7 @@ aside {
 .container.left {
   display: flex;
   justify-content: space-between;
-}
+} */
 
 /* Experience area */
 /* .container.main {
@@ -123,16 +123,25 @@ h5 {
   margin-top: 15px;
   font-size: 1.1em;
   font-weight: 500;
-  color: #4846c5;
+  color: var(--main);
+}
+
+.list-gh1 {
+  color: var(--main);
+  margin-left: 10px;
+}
+
+.list-gh1:hover {
+  text-shadow: 0 0 5px rgb(230, 230, 230);
 }
 
 .badge.pink {
-  background-image: linear-gradient(to right, #4846c5, #91b4ff);
+  background-color: rgb(204, 0, 0);
   margin-right: 5px;
 }
 .badge {
   /* background-color: #83cdff; */
-  background-color: #4846c5;
+  background-color: var(--main);
 }
 .card {
   padding: 0px;
@@ -142,6 +151,7 @@ h5 {
 .card-body {
   flex: 1 1 auto;
   padding: 0.8em 0.8em;
+  /* background-color: rgba(0, 0, 0, 0.342); */
 }
 
 .card-text {
@@ -149,6 +159,7 @@ h5 {
   line-height: 1.2em;
   letter-spacing: 0.1em;
   margin: 0px;
+  color: rgb(77, 77, 77);
 }
 
 /* Contact area */
@@ -158,13 +169,16 @@ h5 {
   align-content: center;
   align-items: center;
 }
+
 .list-item {
   /* margin-top: 6em; */
   padding-top: 3em;
-  color: rgb(211, 211, 211);
+  color: rgb(102, 102, 102);
 }
+
 .list-item:hover {
-  color: #4846c5;
+  color: white;
+  /* text-shadow: 0 0 5px whitesmoke; */
 }
 
 .blockquote {
@@ -186,13 +200,25 @@ h4 {
   /* text-align: center; */
   font-size: 0.95em;
   letter-spacing: 0.1em;
-  padding-top: 1em;
-  margin-left: 22px;
-  padding-bottom: 2em;
-  margin-bottom: 0px;
-  right: 0px;
+  /* margin-left: 10px; */
+  padding-bottom: 1em;
+}
+.display {
+  display: inline-flex;
+  margin-left: 23px;
 }
 
 .list-inline-item {
   padding-left: 1.5em;
+}
+
+h6 {
+  color: rgb(211, 211, 211);
+  font-weight: normal;
+  /* text-align: center; */
+  font-size: 0.5em;
+  letter-spacing: 0.1em;
+  padding-top: 1em;
+  /* margin-left: 10px; */
+  padding-bottom: 1em;
 }
