@@ -61,12 +61,13 @@ main {
 h3 {
   text-align: center;
   color: var(--main);
-  margin-top: 2.5em;
+  margin-top: 4em;
+  margin-bottom: 2em;
   font-size: 1.5em;
 }
-.lead {
+/* .lead {
   margin-top: 1.5em;
-}
+} */
 
 p {
   color: var(--gray);
@@ -88,7 +89,7 @@ p {
 
 ul {
   margin-top: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   align-items: center;
   /* text-align: center; */
 }
@@ -123,9 +124,9 @@ h5 {
 }
 
 /* Contact area */
-.profile {
+/* .profile {
   margin-top: 1.5em;
-}
+} */
 .contact-container {
   text-align: center;
   margin-top: 5%;
