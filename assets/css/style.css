@@ -27,7 +27,7 @@ main {
   background-color: rgba(246, 246, 246, 0.966);
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 22;
   padding: 1.5em;
 }
 
@@ -54,6 +54,10 @@ main {
   background-image: radial-gradient(rgb(216, 0, 0), rgb(255, 217, 161));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+span.navbar-toggler-icon {
+  z-index: 10000;
 }
 
 /* Experience area */
