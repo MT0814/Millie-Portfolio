@@ -2,6 +2,7 @@
   --white: rgb(255, 255, 255);
   --gray: rgb(78, 78, 78);
   --main: #030303;
+  --light-grey: rgb(225, 225, 225);
 }
 
 * {
@@ -24,11 +25,11 @@ main {
 .navbar {
   display: flex;
   justify-content: space-evenly;
-  background-color: rgba(246, 246, 246, 0.966);
+  background-color: rgba(246, 246, 246, 0.918);
   position: fixed;
   width: 100%;
   z-index: 22;
-  padding: 1.5em;
+  /* padding: 1.5em; */
 }
 
 .navbar-brand {
@@ -60,18 +61,57 @@ span.navbar-toggler-icon {
   z-index: 10000;
 }
 
-/* Experience area */
+/* Subject image */
+/* Container needed to position the button. Adjust the width as needed */
+.carousel-item {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image responsive */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.carousel-item .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(246, 246, 246);
+  box-shadow: 0 0 10px var(--main);
+  color: rgb(129, 129, 129);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.carousel-item .btn:hover {
+  background-image: radial-gradient(rgb(216, 0, 0), rgb(255, 217, 161));
+  color: var(--white);
+}
+
+/* Main area */
+/* About */
 
 h3 {
   text-align: center;
   color: var(--main);
-  margin-top: 4em;
-  margin-bottom: 2em;
+  margin-top: 3em;
+  margin-bottom: 1em;
   font-size: 1.5em;
+  /* padding-top: 2em; */
 }
-/* .lead {
-  margin-top: 1.5em;
-} */
+.lead {
+  /* padding: 15px; */
+  text-align: center;
+}
 
 p {
   color: var(--gray);
@@ -81,7 +121,6 @@ p {
   letter-spacing: 0.1em;
   margin-bottom: 10px;
   align-items: center;
-  /* text-align: center; */
 }
 
 .list-group-item {
@@ -96,12 +135,6 @@ ul {
   margin-bottom: 0px;
   align-items: center;
   /* text-align: center; */
-}
-h5 {
-  /* margin-top: 15px; */
-  font-size: 1.1em;
-  font-weight: 500;
-  color: var(--main);
 }
 
 .list-gh1 {
@@ -124,81 +157,22 @@ h5 {
 }
 
 .container.experience {
-  margin-top: 1.5em;
+  margin-top: 2em;
 }
 
-/* Contact area */
-/* .profile {
-  margin-top: 1.5em;
-} */
-.contact-container {
-  text-align: center;
-  margin-top: 5%;
-  align-content: center;
-  align-items: center;
-}
-
-.list-item {
-  /* margin-top: 6em; */
-  color: rgb(225, 225, 225);
-  margin-bottom: 1em;
-}
-
-.list-item:hover {
-  /* color: var(--main); */
-  background: radial-gradient(rgb(216, 0, 0), rgb(255, 217, 161));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* text-shadow: 0 0 5px whitesmoke; */
-}
-
-.blockquote {
-  margin-top: 10px;
-}
-
-a {
-  text-decoration: none;
-}
-
-footer {
-  text-align: center;
-}
-
-.list-inline-item {
-  padding-left: 2em;
-}
-
-.list-unstyled a {
-  color: rgb(129, 129, 129);
-}
-
-.list-unstyled a:hover {
-  background-image: radial-gradient(rgb(216, 0, 0), rgb(255, 217, 161));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-h6 {
-  color: rgb(211, 211, 211);
-  font-weight: normal;
-  /* text-align: center; */
-  font-size: 0.5em;
-  letter-spacing: 0.1em;
-  padding-top: 1em;
-  /* margin-left: 10px; */
-  padding-bottom: 1em;
-}
-
-/* Work Section */
+/* My Work */
 .container-work {
   position: relative;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .image {
   display: block;
   width: 100%;
   height: auto;
+  border: none;
+  border-radius: 5px;
+  margin: 0px;
 }
 
 .overlay {
@@ -211,16 +185,22 @@ h6 {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-image: radial-gradient(rgb(216, 0, 0), rgb(255, 217, 161));
+  background-image: repeating-radial-gradient(
+    rgb(0, 0, 0),
+    rgba(0, 0, 0, 0.644)
+  );
+  border: none;
+  border-radius: 5px;
 }
 
 .container-work:hover .overlay {
   opacity: 1;
 }
 
-.text {
-  color: var(--white);
-  font-size: 20px;
+/* Game card */
+.large-text {
+  color: var(--light-grey);
+  font-size: 1.3em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -228,11 +208,82 @@ h6 {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+.large-text:hover {
+  background-image: radial-gradient(rgb(216, 0, 0), rgb(255, 217, 161));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* text-shadow: 0 0 5px rgb(255, 255, 255); */
+}
+
+span.large-tech-text {
+  color: var(--light-grey);
+  font-size: 15px;
+}
+
+.large-gicon {
+  color: var(--light-grey);
+  position: absolute;
+  margin-top: 10px;
+  top: 58%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.large-gicon:hover {
+  background-image: radial-gradient(rgb(216, 0, 0), rgb(255, 217, 161));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* text-shadow: 0 0 5px rgb(255, 255, 255); */
+}
+
+/* Other cards */
+.text {
+  color: var(--light-grey);
+  font-size: 20px;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1.2em;
+  font-weight: 500;
+}
+
+.text:hover {
+  background-image: radial-gradient(rgb(216, 0, 0), rgb(255, 217, 161));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* text-shadow: 0 0 5px rgb(255, 255, 255); */
 }
 
 span.tech-text {
-  color: rgb(255, 242, 208);
-  font-size: 0.8em;
+  color: var(--light-grey);
+  font-size: 15px;
+}
+
+.gicon {
+  color: var(--light-grey);
+  position: absolute;
+  margin-top: 10px;
+  top: 63%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.gicon:hover {
+  background-image: radial-gradient(rgb(216, 0, 0), rgb(255, 217, 161));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* text-shadow: 0 0 5px rgb(255, 255, 255); */
 }
 
 h2.fs-5 {
@@ -249,37 +300,83 @@ h2.fs-5 {
   margin-top: 20px;
 }
 
-/* Container needed to position the button. Adjust the width as needed */
-.carousel-item {
-  position: relative;
-  width: 100%;
+/* Contact area */
+
+.contact-container {
+  text-align: center;
+  align-content: center;
+  align-items: center;
 }
 
-/* Make the image responsive */
-.carousel-item img {
-  width: 100%;
-  height: auto;
+.blockquote {
+  margin-top: 20px;
 }
 
-/* Style the button and place it in the middle of the container/image */
-.carousel-item .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: rgb(240, 240, 240);
+.blockquote-footer {
+  margin-bottom: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list-item {
+  /* margin-top: 6em; */
+  color: rgb(187, 187, 187);
+  margin-bottom: 1em;
+}
+
+.list-item:hover {
+  /* color: var(--main); */
+  background: radial-gradient(rgb(216, 0, 0), rgb(255, 217, 161));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* text-shadow: 0 0 5px whitesmoke; */
+}
+
+.profile {
+  border-radius: 50%;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  background-color: var(--light-grey);
+}
+
+h5 {
+  /* margin-top: 15px; */
+  font-size: 1.1em;
+  font-weight: 500;
+  color: var(--main);
+}
+
+.list-inline-item {
+  padding-left: 2em;
+}
+
+.list-unstyled a {
   color: rgb(129, 129, 129);
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
 }
 
-.carousel-item .btn:hover {
+.list-unstyled a:hover {
   background-image: radial-gradient(rgb(216, 0, 0), rgb(255, 217, 161));
-  color: var(--white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 1195px) {
+  .text {
+    top: 45%;
+  }
+  .gicon {
+    top: 58%;
+  }
+  .profile {
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -287,7 +384,166 @@ h2.fs-5 {
     width: 100%;
   }
   .carousel-item .btn {
-    top: 80%;
+    top: 55%;
     text-align: center;
+  }
+  .large-text {
+    top: 45%;
+  }
+  .large-gicon {
+    top: 63%;
+  }
+  .profile {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .half {
+    width: 100%;
+  }
+  .carousel-item .btn {
+    top: 60%;
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .large-text {
+    top: 43%;
+  }
+  .large-gicon {
+    top: 65%;
+  }
+
+  .text {
+    top: 45%;
+    left: 50%;
+  }
+
+  .gicon {
+    top: 65%;
+    left: 50%;
+  }
+  .profile {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .half {
+    width: 100%;
+  }
+  .carousel-item .btn {
+    top: 60%;
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .text {
+    font-size: 15px;
+    top: 45%;
+    left: 50%;
+  }
+  span.tech-text {
+    font-size: 12px;
+  }
+  .gicon {
+    top: 60%;
+    left: 50%;
+  }
+  .profile {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .large-text {
+    font-size: 1.2em;
+    top: 43%;
+  }
+  span.large-tech-text {
+    font-size: 11px;
+  }
+  .large-gicon {
+    top: 65%;
+  }
+  .profile {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navbar .navbar-brand {
+    font-size: 1.5em;
+  }
+  .half {
+    width: 100%;
+  }
+  .carousel-item .btn {
+    top: 60%;
+    font-size: 0.6em;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  p {
+    font-size: 0.8em;
+  }
+
+  .blockquote-footer {
+    font-size: 0.7em;
+  }
+
+  .profile {
+    width: 50%;
+  }
+
+  .large-text,
+  .text {
+    font-size: 15px;
+    top: 43%;
+  }
+  span.large-tech-text,
+  span.tech-text {
+    font-size: 11px;
+  }
+  .large-gicon,
+  .gicon {
+    top: 66%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .navbar .navbar-brand {
+    font-size: 1.2em;
+  }
+  .nav-link {
+    font-size: 1em;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .lead {
+    font-size: 15px;
+  }
+  p {
+    font-size: 11px;
+  }
+
+  .blockquote-footer {
+    font-size: 10px;
+  }
+  .large-text,
+  .text {
+    font-size: 15px;
+    top: 42%;
+  }
+  span.large-tech-text,
+  span.tech-text {
+    font-size: 10px;
+  }
+  .large-gicon,
+  .gicon {
+    top: 69%;
   }
 }

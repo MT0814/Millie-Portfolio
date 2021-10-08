@@ -14,15 +14,6 @@ If you are opting out of career services, this is _still a required assignment_.
 
 - Updated LinkedIn profile
 
-## Grading
-
-| Requirement      | Weight |
-| ---------------- | ------ |
-| Portfolio        | 40%    |
-| GitHub Profile   | 40%    |
-| Resume           | 10%    |
-| LinkedIn Profile | 10%    |
-
 ## Instructions
 
 1. [Updated Portfolio](#updated-portfolio)
@@ -74,16 +65,6 @@ Employers (and potential collaborators) _will_ look at your GitHub profile, so p
 
 Your GitHub profile must contain at least the following items:
 
-1. Profile picture or avatar
-
-- A photo or an avatar other than the default Github identicon. (a semi-professional to professional photo or an avatar photo are preferred)
-
-2. Biography
-
-3. Email address. If you don't want to share your personal email or phone number, use a developer email.
-
-4. Link to your deployed portfolio
-
 5. At least 2 pinned repositories:
 
    - Navigate to [GitHub](https://github.com/) and go to your profile.
@@ -131,6 +112,10 @@ Your resume should include:
 💁 Need help updating your LinkedIn? Check out the [career services milestone resources for online presence](https://mycareerspot.org/onlinepresence).
 
 Update your LinkedIn Profile with a strong bio statement, a professional photo, and links to your Github and portfolio.
+
+## License
+
+[![License: MIT License](https://img.shields.io/badge/License-MIT%20License-yellow.svg)](https://www.gnu.org/licenses/MIT%20License)
 
 ## Others
 
