@@ -81,8 +81,8 @@ span.navbar-toggler-icon {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: rgb(246, 246, 246);
-  box-shadow: 0 0 10px var(--main);
+  background-color: rgba(246, 246, 246, 0.666);
+  /* box-shadow: 0 0 10px var(--main); */
   color: rgb(129, 129, 129);
   font-size: 16px;
   font-weight: 500;
@@ -163,7 +163,7 @@ ul {
 /* My Work */
 .container-work {
   position: relative;
-  /* width: 50%; */
+  width: 50%;
 }
 
 .image {
@@ -375,7 +375,7 @@ h5 {
     top: 58%;
   }
   .profile {
-    width: 30%;
+    width: 20%;
   }
 }
 
@@ -394,7 +394,7 @@ h5 {
     top: 63%;
   }
   .profile {
-    width: 40%;
+    width: 30%;
   }
 }
 
