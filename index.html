@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Millie's Portfolio</title>
+
     <link rel="webtag icon"
-        href="https://www.freeiconspng.com/uploads/letter-m-icon-png-19.png"
+        href="https://iconsplace.com/wp-content/uploads/_icons/000000/256/png/letter-m-icon-256.png"
         alt="m icon">
+
+
     <!-- Bootcstrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- Google Font -->
@@ -24,23 +27,27 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="#">MILLIE TSAI</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span><div class="icons8-menu"></div></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#about">About</a>
+            <a class="nav-link" aria-current="page" href="#about">About Me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#work">My Work</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact">Contact Me</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <!-- <div class="icons8-info"></div>
+  <div class="icons8-document"></div>
+  <div class="icons8-whatsapp"></div> -->
 
 
   <!-- Subtitle area -->
@@ -77,14 +84,15 @@
   
   <main>
     <div class="container main">
-      <h3 id="about">ABOUT ME</h3>
+        
+        <h3 id="about">About Me</h3>
         <p class="lead mb-3">8 years of experience in product design, software development, project management and business
                development. Worked cross-functionally to guide products from ideation to launch by connecting the
                technical and business worlds. Well-organized, clear communicator, strong time-management, and
                leadership skills to drive product development with SCRUM framework(Agile development).
         </p>
-     
-        <h5 class="text-center"><span class="badge pink">NEW</span>Programming languages:</h5>
+       <br>
+        <h5 class="text-center mb-3">Programming Languages:</h5><br>
         <div class="container text-center justify-content-center">
           <div class="row">
             <div class="col-4">
@@ -109,9 +117,14 @@
             </div>
           </div>
         </div>
+        <br>
+      
       <!-- My work -->
+      
+
+
   
-      <div class="container experience">
+      <!--<div class="container experience">
         <h3 id="work">MY WORK</h3>
         <div class="row">
 
@@ -162,31 +175,62 @@
               </div>
           </div>
         </div>
+      </div> -->
+    </div> 
+  </main>
+
+  <div class="container work-area">
+    <h3 id="work">My Work</h3>
+    <div class="row mt-3">
+      <div class="col-md-8">
+        <img src="image/gaming-platform.png" alt="Avatar" class="image">
+      </div>
+      <div class="vert-center
+      col-md-4">
+      <a class="text" href="https://mt0814.github.io/Project-1_focus-gaming-platform/" target="_blank"><h5>Gaming Platform<a href="https://github.com/MT0814/Project-1_focus-gaming-platform" target="_blank"><i class="fa fa-github gicon" style="font-size:30px"></i></a><br><br><span class="tech-text">CSS/Javascript/FreetoGame APIs/Pokémon APIs</span></h5></a>
       </div>
     </div>
-
-      
-
-
-        
-      
-    </main>
-
-      
+    <div class="row-r mt-3">
+      <div class="vert-center col-md-4">
+        <a class="text" href="https://mt0814.github.io/Week6-Weather-dashboard/" target="_blank"><h5>Weather Dashboard<a href="https://github.com/MT0814/Week6-Weather-dashboard" target="_blank"><i class="fa fa-github gicon" aria-hidden="true" style="font-size:30px"></i></a><br><br><span class="tech-text">CSS/Javascript/OpenweatherAPIs</span></h5></a>
+        </div>
+      <div class="col-md-8">
+        <img src="image/weather.png" alt="Avatar" class="image">
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-8">
+        <img src="image/code.png" alt="Avatar" class="image">
+      </div>
+      <div class="vert-center col-md-4">
+      <a class="text" href="https://mt0814.github.io/Week4-HW-Code-Quiz/" target="_blank"><h5>Code Quiz<a href="https://github.com/MT0814/Week4-HW-Code-Quiz" target="_blank"><i class="fa fa-github gicon" aria-hidden="true" style="font-size:30px"></i></a><br><br><span class="tech-text">CSS/Javascript</span></h5></a>
+      </div>
+    </div>
+    <div class="row-r mt-3">
+      <div class="vert-center col-md-4">
+        <a class="text" href="https://mt0814.github.io/Week5-Work-Day-Scheduler/" target="_blank"><h5>Day Scheduler<a href="https://github.com/MT0814/Week5-Work-Day-Scheduler" target="_blank"><i class="fa fa-github gicon" aria-hidden="true" style="font-size:30px"></i></a><br><br><span class="tech-text">CSS/Javascript/moment.js</span></h5></a>
+        </div>
+      <div class="col-md-8">
+        <img src="image/scheduler.png" alt="Avatar" class="image">
+      </div>
+    </div>
+  </div>      
 
     <!-- Contact section-->
-    <div class="text-center contact-container">
-      <h3 id="contact">CONTACT ME</h3>
-      <figure class="text-center">
-        <img class="mb-3  profile" src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.6435-9/219319315_10157736044587827_7984000690042126702_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=oOQgqDrVzzkAX_9Bfh2&_nc_ht=scontent-sea1-1.xx&oh=fcedb354afac0b5eae5ba7e3bd8d390c&oe=617EC3A8" width="20%" alt="Millie">
-        <blockquote class="blockquote">
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <img class="image mb-3" src="./image/profile2.png" alt="Millie">
+      </div>
+      <div class="vert-center
+      col-md-6">
+         <div><h3 id="contact">Contact Me</h3>
+          <span class="lead">An experienced app designer and good storyteller who has great imaginative power and passion to innovate the pleasant products to delight users. Designed <span class="highlight">ASUS Transformer Tablet, Zenfone, Clean Master app</span> which has over <span class="highlight">400 millions</span> users globally.</span> <blockquote class="blockquote">
           <p>We're just enthusiastic about what we do.</p>
         </blockquote>
         <figcaption class="blockquote-footer">
          <cite title="Source Title">Steve Jobs</cite>
         </figcaption>
-      </figure>
-      <div class="text-center">
+
         <ul class="list-inline">
           <li class="list-inline-item"><a href="mailto: millie_tsai@me.com" target="_blank"><i style="font-size:23px" class="fa list-item">&#xf0e0;</i></a></li>
           <li class="list-inline-item"><a href="https://www.linkedin.com/in/millietsai/" target="_blank"><i class="fa fa-linkedin list-item" aria-hidden="true" style="font-size:30px"></i></a></li>
@@ -194,9 +238,20 @@
           <li class="list-inline-item"><a href="https://www.instagram.com/milliecookies16/" target="_blank"><i class="fa fa-instagram list-item" aria-hidden="true" style="font-size:30px"></i></a></li>
         </ul>
       </div>
+      
+
+        
+       </div>
+     
+    </div>
+
+    <div class="contact-container">
+      
+      
+      
     
     </div>
-    
+  
     <!-- footer -->
     <footer class="bd-footer py-5">
       <div class="container py-5">
@@ -209,6 +264,7 @@
             <ul class="list-unstyled small text-muted">
               <li class="mb-2">Designed and built by Millie Tsai.</li>
               <li class="mb-2">© 2021 Millie Tsai @UW Boot Camp. All Rights Reserved.</li>
+              <li class="mb-2"><a href="https://icons8.com/icon/JTI1GNXQxpx3/document">Document icon by Icons8</a></li>
             </ul>
           </div>
           <div class="col-6 col-lg-4 offset-lg-1 mb-3">
