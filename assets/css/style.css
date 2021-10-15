@@ -302,7 +302,7 @@ span.tech-text {
   text-align: center;
 }
 .gicon:hover {
-  color: #80d1c9;
+  color: var(--main);
   /* text-shadow: 0 0 5px rgb(255, 255, 255); */
 }
 
@@ -351,8 +351,8 @@ a {
 }
 .list-inline {
   text-align: center;
-  margin-top: 1em;
-  margin-left: -15%;
+  margin-top: 2em;
+  margin-left: -6%;
 }
 
 span.highlight {
