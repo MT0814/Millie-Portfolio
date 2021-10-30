@@ -4,11 +4,9 @@
 
 Modified previous portfolio and revamped it to match responsive design.
 
-
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 
 ## Technology Used
 
@@ -16,7 +14,10 @@ HTML, CSS
 
 ## Others
 
+Screenshot Landscape Mode
+
 ![screenshot of my portfolio](./screenshot.png)
+
 [Published website](https://mt0814.github.io/Week8-Portfolio/)
 
 ---
