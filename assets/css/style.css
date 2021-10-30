@@ -290,9 +290,9 @@ ul li {
 }
 
 span.tech-text {
-  color: var(--gray);
-  font-size: 15px;
-  font-weight: 300;
+  color: rgb(125, 125, 125);
+  font-size: 0.9em;
+  font-weight: 400;
   letter-spacing: 0.085em;
 }
 
