@@ -47,7 +47,7 @@ main {
   justify-content: space-evenly;
   background-color: rgba(246, 246, 246, 0.972);
   box-shadow: 0 0 10px gray;
-  position: fixed;
+  position: inherit;
   width: 100%;
   z-index: 22;
   /* padding: 1.5em; */
