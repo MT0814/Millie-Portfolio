@@ -91,7 +91,7 @@ main {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #81d8d0;
+  background-color: #708cca;
   transform: scaleX(0);
   /* transform-origin: top left; */
   transition: transform 0.3s ease;
@@ -157,7 +157,7 @@ li.nav-item {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #81d8d0;
+  background-color: #708cca;
   transform: scaleX(0);
   transform-origin: top left;
   transition: transform 0.3s ease;
@@ -280,7 +280,7 @@ ul li {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #81d8d0;
+  background-color: #708cca;
   transform: scaleX(0);
   transform-origin: top left;
   transition: transform 0.3s ease;
@@ -298,7 +298,7 @@ span.tech-text {
 }
 
 .gicon {
-  color: #81d8d0;
+  color: #708cca;
   /* position: absolute; */
   margin-top: 10px;
   margin-left: 10px;
@@ -335,7 +335,7 @@ a {
 
 .list-item {
   /* margin-top: 6em; */
-  color: #81d8d0;
+  color: #708cca;
   margin-bottom: 1em;
   padding-left: 0.5em;
   text-align: right;
@@ -395,7 +395,7 @@ h5 {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #81d8d0;
+  background-color: #708cca;
   transform: scaleX(0);
   transform-origin: top left;
   transition: transform 0.3s ease;
