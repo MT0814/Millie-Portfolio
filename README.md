@@ -16,7 +16,7 @@ HTML, CSS
 
 Screenshot Landscape Mode
 
-![screenshot of my portfolio](./screenshot.png)
+![screenshot of my portfolio](./image/screenshot.png)
 
 [Published website](https://mt0814.github.io/Week8-Portfolio/)
 
