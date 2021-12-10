@@ -18,7 +18,7 @@ Screenshot Landscape Mode
 
 ![screenshot of my portfolio](./image/screenshot.png)
 
-[Published website](https://mt0814.github.io/Week8-Portfolio/)
+Please click [HERE](https://mt0814.github.io/Week8-Portfolio/) for my portfolio.
 
 ---
 
