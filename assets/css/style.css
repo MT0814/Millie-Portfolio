@@ -408,12 +408,14 @@ h5 {
 
 .list-unstyled a {
   position: relative;
+  font-weight: 300;
   color: rgb(129, 129, 129);
   text-decoration: none;
 }
 
 .list-unstyled a:hover {
   color: rgb(41, 41, 41);
+  font-weight: 500;
 }
 
 .list-unstyled a::before {
